@@ -1,6 +1,6 @@
 # SDM-UniPS-WebUI-Docker  🐳
 
-Welcome to the `SDM-UniPS-WebUI-Docker ` repository! This Docker container is designed to simplify the deployment and utilization of SDM-UniPS, a state-of-the-art model for Scalable, Detailed and Mask-free Universal Photometric Stereo. This technology has been introduced by Satoshi Ikehata in 2023, aiming to revolutionize the way we approach photometric stereo by making it more accessible, efficient, and detailed.
+Welcome to the `SDM-UniPS-WebUI-Docker` repository! This Docker container is designed to simplify the deployment and utilization of SDM-UniPS, a state-of-the-art model for Scalable, Detailed and Mask-free Universal Photometric Stereo. This technology has been introduced by Satoshi Ikehata in 2023, aiming to revolutionize the way we approach photometric stereo by making it more accessible, efficient, and detailed.
 
 ## Table of Contents 📚
 - [Quick Start](#quick-start)
