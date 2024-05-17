@@ -1,0 +1,4 @@
+
+*.pyc
+checkpoint/normal/nml.pytmodel
+checkpoint/brdf/brdf.pytmodel
