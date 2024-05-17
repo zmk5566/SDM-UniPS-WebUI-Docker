@@ -1,6 +1,6 @@
-# SDM-UniPS-Docker 🐳
+# SDM-UniPS-WebUI-Docker  🐳
 
-Welcome to the `SDM-UniPS-Docker` repository! This Docker container is designed to simplify the deployment and utilization of SDM-UniPS, a state-of-the-art model for Scalable, Detailed and Mask-free Universal Photometric Stereo. This technology has been introduced by Satoshi Ikehata in 2023, aiming to revolutionize the way we approach photometric stereo by making it more accessible, efficient, and detailed.
+Welcome to the `SDM-UniPS-WebUI-Docker ` repository! This Docker container is designed to simplify the deployment and utilization of SDM-UniPS, a state-of-the-art model for Scalable, Detailed and Mask-free Universal Photometric Stereo. This technology has been introduced by Satoshi Ikehata in 2023, aiming to revolutionize the way we approach photometric stereo by making it more accessible, efficient, and detailed.
 
 ## Table of Contents 📚
 - [Quick Start](#quick-start)
@@ -37,6 +37,15 @@ docker run -p 5870:7860 --gpus all --name sdm-unips-instance sdm-unips
 ```
 
 This will make the application accessible on your local machine via port `5870`. You can interact with it as if it were running natively, but with the added benefits of Docker's environment encapsulation.
+
+## Running the Web UI
+
+If you has already started the WebUI running, you can check out http://127.0.0.1:5870 to access the web GUI
+
+
+![sdm-unips-webui](https://github.com/zmk5566/SDM-UniPS-WebUI-Docker/assets/98451647/9a5cad2f-abfc-4181-9c8e-c6e8964dee73)
+
+
 
 ## Citation 📖
 
