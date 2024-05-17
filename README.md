@@ -7,7 +7,7 @@ Welcome to the `SDM-UniPS-WebUI-Docker` repository! This Docker container is des
 - [Building the Container](#building-the-container)
 - [Running the Container](#running-the-container)
 - [Citation](#citation)
-- [WebUI] (#running-the-web-ui)
+- [WebUI](#running-the-web-ui)
 - [Original Repository](#original-repository)
 ## Quick Start 🚀
 
