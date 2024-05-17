@@ -9,6 +9,11 @@ Welcome to the `SDM-UniPS-WebUI-Docker` repository! This Docker container is des
 - [Citation](#citation)
 - [WebUI](#running-the-web-ui)
 - [Original Repository](#original-repository)
+
+## Requirements 
+
+CUDA 11.8+ 
+
 ## Quick Start 🚀
 
 To quickly start using SDM-UniPS within a Docker environment, ensure you have Docker installed and running on your machine. Then, you can pull and run the container directly from Docker Hub (docker pull zmk5566/sdm-unips-webui) ; if the docker image is not accessible, jump to the [Building the Container](#building-the-container) section).
