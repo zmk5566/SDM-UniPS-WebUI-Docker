@@ -19,11 +19,13 @@ docker run -p 5870:7860 --gpus all -v /path/to/local/checkpoint:/app/checkpoint 
 
 This command will download the container (if not already present locally), start an instance named `sdm-unips-instance`, and map the local port `5870` to the container's port `7860`. Ensure your GPU is accessible by Docker to leverage the full power of SDM-UniPS. Please also notice that you should have the checkpoint predownload [Here](https://www.dropbox.com/s/yu8h6g0zp07mumd/checkpoint.zip?dl=0)
 
+```
 YOUR_CHECKPOINT_PATH
 ├── normal
 │   └── nml.pytmodel
 └── brdf
     └── brdf.pytmodel
+```
 
 ## Building the Container 🛠️
 
