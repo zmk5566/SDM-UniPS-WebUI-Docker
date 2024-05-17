@@ -14,18 +14,12 @@ Welcome to the `SDM-UniPS-WebUI-Docker` repository! This Docker container is des
 To quickly start using SDM-UniPS within a Docker environment, ensure you have Docker installed and running on your machine. Then, you can pull and run the container directly from Docker Hub (assuming it's uploaded there; if not, jump to the [Building the Container](#building-the-container) section).
 
 ```bash
-docker run -p 5870:7860 --gpus all -v /path/to/local/checkpoint:/app/checkpoint --name sdm-unips-instance sdm-unips
-```
 
-This command will download the container (if not already present locally), start an instance named `sdm-unips-instance`, and map the local port `5870` to the container's port `7860`. Ensure your GPU is accessible by Docker to leverage the full power of SDM-UniPS. Please also notice that you should have the checkpoint predownload [Here](https://www.dropbox.com/s/yu8h6g0zp07mumd/checkpoint.zip?dl=0) As suggested by Satoshi in his original repo.
+  docker run -p 5870:7860 --gpus all --name sdm-unips-webui-instance zmk5566/sdm-unips-webui:latest
 
 ```
-YOUR_CHECKPOINT_PATH
-├── normal
-│   └── nml.pytmodel
-└── brdf
-    └── brdf.pytmodel
-```
+
+This command will download the container (if not already present locally), start an instance named `sdm-unips-webui-instance`, and map the local port `5870` to the container's port `7860`. Ensure your GPU is accessible by Docker to leverage the full power of SDM-UniPS. 
 
 ## Building the Container 🛠️
 
@@ -42,8 +36,19 @@ This command builds the Docker image with the tag `sdm-unips`, incorporating all
 After building the container, or if you've pulled it from Docker Hub, run it locally with the following command:
 
 ```bash
-docker run -p 5870:7860 --gpus all --name sdm-unips-instance sdm-unips
+docker run -p 5870:7860 --gpus all -v /path/to/local/checkpoint:/app/checkpoint --name sdm-unips-instance sdm-unips
 ```
+Please also notice that you should have the checkpoint predownload [Here](https://www.dropbox.com/s/yu8h6g0zp07mumd/checkpoint.zip?dl=0) As suggested by Satoshi in his original repo.
+
+```
+YOUR_CHECKPOINT_PATH
+├── normal
+│   └── nml.pytmodel
+└── brdf
+    └── brdf.pytmodel
+```
+
+
 
 This will make the application accessible on your local machine via port `5870`. You can interact with it as if it were running natively, but with the added benefits of Docker's environment encapsulation.
 
